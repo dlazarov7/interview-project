@@ -314,8 +314,10 @@ const App = () => {
         return (<span key={index}>{emps.employees}</span>)
       })}
 
-      <p>Updete epmloyee (fill the new data below in Add employees then press Update) </p>
+      <span className='heading'>Updete epmloyee (fill the new data below in Add employees then press Update)</span>
+      <p>Company name</p>
       <input type="text" value={companyNameToputEmp} onChange={handleCompNameToPutEmp} name='companyNameToputEmp' />
+      <p>Username</p>
       <input type="text" value={usernameToPutEmp} onChange={handeleUsername} name='usernameToPutEmp' />
       <button onClick={handleEmpPut}>Update</button>
 
